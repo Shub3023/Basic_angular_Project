@@ -1,0 +1,37 @@
+[
+	{   
+		"position":1,
+		"color": "red",
+		"value": "#f00"
+	},
+	{
+		"position":2,
+		"color": "green",
+		"value": "#0f0"
+	},
+	{
+		"position":3,
+		"color": "blue",
+		"value": "#00f"
+	},
+	{
+		"position":4,
+		"color": "cyan",
+		"value": "#0ff"
+	},
+	{   
+		"position":5,
+		"color": "magenta",
+		"value": "#f0f"
+	},
+	{
+		"position":6,
+		"color": "yellow",
+		"value": "#ff0"
+	},
+	{
+		"position":7,
+		"color": "black",
+		"value": "#000"
+	}
+]

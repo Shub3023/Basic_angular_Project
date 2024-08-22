@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* html, body { height: 100%; } */
+/* body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */
+
+
+/* Ensure the overlay container has a high z-index */
+/* :host ::ng-deep ngx-material-timepicker-container, */
+/* :host ::ng-deep .cdk-overlay-container, */
+/* :host ::ng-deep .cdk-overlay-pane { */
+    /* z-index: 1000 !important; */
+/* } */
+ 
+/* Example popup window styling (adjust class names as needed) */
+/* .popup-window { */
+    /* z-index: 999 !important; */
+    /* position: relative; */
+/* } */

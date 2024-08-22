@@ -1,0 +1,73 @@
+<!-- <!DOCTYPE html> -->
+<!-- <html lang="en"> -->
+<!-- <head> -->
+    <!-- <meta charset="UTF-8"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!-- <title>Login Form</title> -->
+<!-- </head> -->
+<!-- <body> -->
+    <!-- <div id="form1"> -->
+        <!-- <form class="form-style" [formGroup]="loginForm" > -->
+            <!-- <h2 class="login-head">Login Form</h2> -->
+            <!-- <label for="email">Email</label> -->
+            <!-- <input type="text" name ="email" formControlName="email" placeholder="Enter Your Email" > -->
+            <!-- <label for="mobile">Mobile</label> -->
+            <!-- <input type="mobile" placeholder="Enter Your mobile number" name="mobile" formControlName="mobile"> -->
+            <!-- <button class="btn" (click)="login()" >Submit</button> -->
+            <!-- <button class="btn" (click)="signup()" type="button"><span>Sign Up</span></button> -->
+        <!-- </form> -->
+    <!-- </div> -->
+<!-- </body> -->
+<!-- </html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="body">
+    <section class="left-section">
+        <img class="left-img" src="../../assets/Lord_Ganesh-removebg-preview.png" alt="">
+        <!-- <div class="left-part"> -->
+            <!-- Hee -->
+        <!-- </div> -->
+         <div class="img-text">
+          <div style="text-align: center; opacity:2;" >Welcome to</div>
+          <div style="text-align: center;">Test Astrologer</div>
+          </div>
+          <div class="img-text2">Why Sign Up?</div>
+          <div class="img-content">
+            <p><img class="img-icon" src="../../assets/personaliz.png">Get Personalized Information</p>
+            <p><img class="img-icon" src="../../assets/chart.png">Save Charts (kundali) on cloud</p>
+            <p><img class="img-icon" src="../../assets/chatandcall.png">Chat & Call</p>
+            <p><img class="img-icon" src="../../assets/notes.jpg">Write your notes & comments</p>
+            <p><img class="img-icon" src="../../assets/mobileandweb.png">Anywhere access:Mobile & Web</p>
+          </div>
+    </section>
+
+<section class="right-section">
+            <form class="form-style" [formGroup]="loginForm" >
+            <h2 class="login-head" style="margin-bottom: 30px;">Login Form</h2>
+            <!-- <label for="email">Email</label> -->
+            <!-- <input type="text" name ="email" formControlName="email" placeholder="Enter Your Email" > -->
+            <!-- <br> -->
+
+            <div  style="margin-bottom: -15px!important;">
+                <mat-form-field appearance="outline" style="width: 400px; height: 55px; " class="abc">
+                <mat-label style="font-size: 14px;">Enter mobile number/email</mat-label>
+                <input matInput name="user" formControlName="email" placeholder="">
+            </mat-form-field>
+            </div>
+            <button class="btn" (click)="login()" >Submit</button>
+            <br>
+            <button class="btn" (click)="signup()" type="button"><span>Sign Up</span></button>
+        </form>
+
+</section>
+</section>
+</body>
+</html>

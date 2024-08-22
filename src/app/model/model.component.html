@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="body">
+    <section class="left-section">
+        <img class="left-img" src="../../assets/Lord_Ganesh-removebg-preview.png" alt="">
+        <!-- <div class="left-part"> -->
+            <!-- Hee -->
+        <!-- </div> -->
+         <div class="img-text">
+          <div style="text-align: center; opacity:2;" >Welcome to</div>
+          <div style="text-align: center;">Test Astrologer</div>
+          </div>
+          <div class="img-text2">Why Sign Up?</div>
+          <div class="img-content">
+            <p><img class="img-icon" src="../../assets/personaliz.png">Get Personalized Information</p>
+            <p><img class="img-icon" src="../../assets/chart.png">Save Charts (kundali) on cloud</p>
+            <p><img class="img-icon" src="../../assets/chatandcall.png">Chat & Call</p>
+            <p><img class="img-icon" src="../../assets/notes.jpg">Write your notes & comments</p>
+            <p><img class="img-icon" src="../../assets/mobileandweb.png">Anywhere access:Mobile & Web</p>
+          </div>
+    </section>
+    <section class="right-section">
+      <h2 >Sign Up</h2>
+      <h4>Account Type</h4>
+      <form  [formGroup]="signupForm">
+              <div style="margin-bottom: -5px!important;">
+                  <mat-form-field appearance="outline" style="width: 400px; height: 55px; " class="abc">
+                  <mat-label style="font-size: 14px;">User</mat-label>
+                  <mat-select >
+                  <mat-select matInput name="user" formControlName="user"></mat-select>
+                  <mat-option value="user">User</mat-option>
+                  <mat-option value="astrologer">Astrologer</mat-option>
+
+                </mat-select>
+              </mat-form-field>
+              </div>
+         <div class="second-row" style="margin-bottom: -5px!important;">
+          <mat-form-field appearance="outline" style="width: 196px; height: 55px; " class="second-row-input">
+            <mat-label style="font-size: 14px;">FirstName</mat-label>
+            <input matInput   formControlName="fname" name="fname">
+        </mat-form-field>
+        <mat-form-field appearance="outline" style="width: 196px; height: 55px;" class="second-row-input">
+          <mat-label style="font-size: 14px;">LastName</mat-label>
+          <input matInput formControlName="lname" >
+      </mat-form-field>
+     </div>
+     <div class="third-row-input" style="margin-bottom: -5px!important;">
+      <mat-form-field appearance="outline" color="accent" style="width: 120px; height: 55px;" class="first">
+        <mat-label style="font-size: 14px;">DOB</mat-label>
+        <input matInput [matDatepicker]="picker" formControlName="dob" >
+        <mat-datepicker-toggle matSuffix [for]="picker" style="color: aqua;"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+   
+ 
+  <mat-form-field appearance="outline"  style="width: 80px; height: 55px;"  class="two">
+  <!-- <mat-form-field appearance="outline" > -->
+    <mat-label style="font-size: 14px;">HH:MM</mat-label>
+       <input matInput [ngxMatTimepicker]="timePicker" formControlName="time" >
+       <ngx-mat-timepicker #timePicker></ngx-mat-timepicker>
+       <!-- <ngx-material-timepicker #timePicker></ngx-material-timepicker> -->
+  </mat-form-field>
+  <!-- <div class="form-group"> -->
+    <!-- <input -->
+      <!-- placeholder="HH : MM" -->
+      <!-- class="form-control form-control-sm" -->
+      <!-- formControlName="birthDateTime" -->
+      <!-- [ngxTimepicker]="inTime" -->
+    <!-- /> -->
+    <!-- <ngx-material-timepicker #inTime></ngx-material-timepicker> -->
+   <!--  -->
+  <!-- </div> -->
+ 
+  <mat-form-field appearance="outline" style="width: 183px; height: 50px;" class="third">
+    <mat-label style="font-size: 14px; text-align: center;">Gender</mat-label>
+    <mat-select formControlName="gender" >
+      <mat-option value="male">Male</mat-option>
+      <mat-option value="female">Female</mat-option>
+      <mat-option value="other">Other</mat-option>
+    </mat-select>
+</mat-form-field>
+     </div>
+     <div class="second-row" style="margin-bottom: -5px!important;">
+      <mat-form-field appearance="outline" style="width: 196px; height: 55px;">
+        <mat-label style="font-size: 14px;">Email</mat-label>
+        <input matInput formControlName="email" >
+    </mat-form-field>
+    <mat-form-field appearance="outline" style="width: 196px; height: 55px; ">
+      <mat-label style="font-size: 14px;">Mobile</mat-label>
+      <input matInput formControlName="mobile" >
+  </mat-form-field>
+ </div>
+   </form>
+   <div style="display: flex;">
+    <mat-checkbox></mat-checkbox>
+    <p id="term-conditons">
+     I have read Test Astrologer Privacy and Policy and agree to terms and conditions.
+    </p>
+   </div>
+   <button class="btn" (click)="onSubmit()" >Register</button>
+   <p class="below-btn">Already Have an account? <a style="outline: none; color: red; cursor: pointer;" (click)="login()">Log In</a></p>
+    </section>
+</section>
+
+</body>
+</html>

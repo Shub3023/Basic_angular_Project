@@ -1,0 +1,36 @@
+<!-- <mat-toolbar color="primary"> -->
+  <!-- <span class="toolbar-title">Homekodi Consulting Services and Consulting</span> -->
+  <!-- <span class="spacer"></span> -->
+  <!-- <mat-icon>search</mat-icon> -->
+  <!-- <span class="toolbar-title">Homekodi Consulting Services and Consulting</span> -->
+<!-- </mat-toolbar> -->
+
+<!-- <mat-tab-group> -->
+  <!-- <mat-tab label="Colors">Hello</mat-tab> -->
+  <!-- <mat-tab label="Employee">Employee</mat-tab> -->
+  <!-- <mat-tab label="Company">Company</mat-tab> -->
+<!-- </mat-tab-group> -->
+
+<div class="example-container mat-elevation-z8">
+  <mat-table #table [dataSource]="dataSource" >
+    <ng-container matColumnDef="position">
+      <mat-header-cell *matHeaderCellDef style="background-color: #f3cc49; border: 1px solid black;">SR NO. </mat-header-cell>
+      <mat-cell *matCellDef="let element" style="border: 1px solid black;"> {{element.position}} </mat-cell>
+    </ng-container>
+<!--  -->
+    <ng-container matColumnDef="color">
+      <mat-header-cell *matHeaderCellDef style="background-color: #f3cc49; border: 1px solid black;"> Color </mat-header-cell>
+      <mat-cell *matCellDef="let element" style="border: 1px solid black;"> {{element.color}} </mat-cell>
+    </ng-container>
+<!--  -->
+  <!--  -->
+    <ng-container matColumnDef="value">
+      <mat-header-cell *matHeaderCellDef style="background-color: #f3cc49; border: 1px solid black;"> Value </mat-header-cell>
+      <mat-cell *matCellDef="let element" style="border: 1px solid black;" > {{element.value}} </mat-cell>
+    </ng-container>
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+</div>
+
+

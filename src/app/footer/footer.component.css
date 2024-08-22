@@ -1,0 +1,68 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    /* height: 80vh; */
+    /* width: 100vw; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  /* background-image: url(https://th.bing.com/th/id/OIP.RP2BVjOhaa3vtPMEJU4cxgHaE2?pid=ImgDet&w=191&h=124&c=7); */
+    /* background-image: url(https://www.bing.com/images/search?view=detailV2&ccid=3Yvm4%2fm2&id=7F7CC49E05E63E8D9AD0CEFD763B7863076A5373&thid=OIP.3Yvm4_m2BUCtK-2oOdaGHAHaE4&mediaurl=https%3a%2f%2fi0.wp.com%2fwww.csscodelab.com%2fwp-content%2fuploads%2f2020%2f03%2fcss-background-image-zoom-transition.png%3fresize%3d1080%252C712%26ssl%3d1&exph=712&expw=1080&q=background+images+full+screen+css&simid=608030424880601236&FORM=IRPRST&ck=3087C616D5EDA4A692E167375CC609A0&selectedIndex=78&itb=0); */
+    /* transform: rotateY('45'); */
+    /* transform: skewY(3deg); */
+    background-repeat: no-repeat;
+    background-size: auto;
+    border: 10px solid aliceblue;
+    /* border-radius: 3px; */
+    background-size: cover;
+  }
+  h2 {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+  
+  }
+  #form1 {
+    background-color: white;
+    border-radius: 15px;
+    /* transition: width 5s; */
+    /* box-shadow: 10px 10px 5px rgb(8, 114, 149); */
+    width: 500px;
+  }
+  #form1:hover {
+    /* width: 500px; */
+  }
+  .form-style {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+  }
+  .form-style input {
+    margin-top: 10px;
+    padding: 7px;
+    border-radius: 4px;
+    border: 1px solid rgb(176, 210, 126);
+  }
+  .form-style input:focus {
+    /* border: 2px soli yellow; */
+    /* background-color: rgb(188, 217, 226); */
+  }
+  .btn {
+    margin-top: 10px;
+    padding: 5px;
+    text-align: center;
+    font-size: large;
+    background-color:#f3cc49;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+  
+  }
+  .btn:focus {
+    /* border: 1px solid rgb(171, 118, 118); */
+  }
+  .btn:hover {
+    background-color: #f3cc49;
+  }
+  

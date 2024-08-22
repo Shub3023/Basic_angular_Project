@@ -1,0 +1,222 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  /* overflow: hidden; */
+}
+.body {
+  display: flex;
+}
+.left-section {
+  width: 47%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 20px solid #fdfbff;
+  border-radius: 15px;
+  background-color: #f3cc49;
+  opacity: 0.5;
+  position: relative;
+}
+.img-text {
+  width: 300px;
+  position: absolute;
+  top: 20%;
+  /* left: 40%; */
+  margin-left: 300px;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  /* border: 1px solid blueviolet; */
+}
+.img-text2 {
+  position: absolute;
+  top: 55%;
+  left: 32%;
+  transform: translate(-50%, -50%);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.img-text h2 {
+  word-spacing: 5px;
+}
+.img-content {
+  width: 270px;
+  height: 100px;
+  /* border: 2px solid    red; */
+  position: absolute;
+  top: 70%;
+  margin-left: 290px;
+  transform: translate(-50%, -50%);
+  line-height: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.img-icon {
+  height: 20px;
+  width: 20px;
+  margin-top: 2px;
+  margin-right: 5px;
+}
+.left-img {
+  opacity: 0.3;
+
+}
+.left-part {
+  opacity: 0.7;
+}
+.mat-mdc-form-field {
+  width: 9%;
+}
+mat-card {
+  margin: 2%;
+  text-align: left;
+}
+ 
+.mat-mdc-form-field {
+  width: 100%;
+  margin: 1%;
+}
+ 
+.mat-50 {
+  width: 48%;
+  margin: 1%;
+}
+ 
+button {
+  margin: 2px;
+}
+.mat-5 {
+  width: 400px;
+  height: 100px;
+}
+.right-section h2 {
+  margin-top: 30px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 550;
+  color: #f3cc49;
+}
+.right-section h4{
+  font-family: "Poppins", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-left: 10px;
+
+}
+.second-row {
+  display: flex;
+  /* margin-bottom: 10px; */
+}
+.third-row-input {
+  display: flex;
+}
+#term-conditons {
+  margin-bottom: 5px;
+  font-family: "Poppins", sans-serif;
+  line-height: 13px;
+  font-size: 0.75rem;
+  font-weight: 400;
+  margin-right: 15px;
+}
+.right-part button {
+  margin-top: 20px;
+  width: 400px;
+  height: 35px;
+  margin-left: 30px;
+  background-color: #f3cc49;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+.btn {
+  margin-top: 5px;
+  width: 400px;
+  height: 35px;
+  margin-left: 5px;
+  background-color: #f3cc49;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: black;
+}
+.mat-mdc-button:not(:disabled) {
+  color: black;
+}
+.below-btn {
+  margin-top: 2px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 400;
+  text-align: center;
+}
+.below-btn a {
+  outline: none;
+  color: red;
+  text-decoration: none;
+}
+ 
+::ng-deep .mat-mdc-form-field {
+  /* --mdc-filled-text-field-caret-color:red; */
+}
+ 
+::ng-deep .mat-mdc-form-field {
+  --mdc-outlined-text-field-outline-color: #f3cc49;
+}
+ 
+::ng-deep .mdc-text-field--outlined {
+  --mdc-outlined-text-field-container-shape: 15px !important;
+--mdc-outlined-text-field-hover-outline-color:#f3cc49;
+--mdc-outlined-text-field-focus-outline-color:#f3cc49;
+/* --mdc-outlined-text-field-input-text-placeholder-color:black; */
+/* --mdc-outlined-text-field-input-text-placeholder-size:10px; */
+
+
+
+}
+ 
+::ng-deep .mat-mdc-form-field-icon-prefix,
+::ng-deep .mat-mdc-form-field-icon-suffix mat-icon {
+  color: aqua !important;
+  font-size: 20px !important;
+}
+
+::ng-deep .mat-mdc-icon-button{
+   
+  color: #f4c21e !important;
+  /* margin-bottom: 65px!important; */
+}
+
+::ng-deep .mat-mdc-text-field-wrapper {
+  height: 40px!important;
+}
+
+::ng-deep .mat-mdc-form-field{
+  --mdc-outlined-text-field-outline-color:#f4c21e;
+  --mdc-filled-text-filled-focus-label-text-color:black;
+  --mat-form-field-container-height: 40px;
+  }
+
+  ::ng-deep .mdc-text-field--outlined .mat-mdc-form-field-infix{
+    margin-top: 5px!important;
+  }
+
+  ::ng-deep.mat-mdc-select-panel{
+    --mat-select-panel-background-color: #f2ee83 !important;
+   }
+   ::ng-deep.mat-datepicker-content{
+    --mat-datepicker-calendar-container-background-color: #f2ee83 !important;
+   }
+   ::ng-deep.mat-mdc-dialog-container .mat-mdc-dialog-content {
+    background-color: #f2ee83;
+   }
